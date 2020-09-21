@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Snake Game</title>
+		 <link rel="stylesheet" type="text/css" href="home.css">
+	</head>
+	<body>
+
+		<!-- onmousemove="getMousePos()" -->
+		<!-- will use mouse, position to contain menu within canvas -->
+		<div class="margin">
+      <p id="xPos"></p>
+      <p id="yPos"></p>
+    </div>
+
+		<!-- will hold running score for each snake -->
+		<p id="P1Score">P1:</p>
+    <p id="P2Score">P2:</p>
+
+		<canvas id="canvas" width="500" height="500"></canvas>
+
+		<button onclick="newApple()" type="button" name="snakeGame">newApple</button>
+    <button onclick="createPlayer1()" type="button" name="snakeGameSnake">Add player1</button>
+		<button onclick="createPlayer2()" type="button" name="snakeGameSnake">Add player2</button>
+    <button onclick="startNewGame()" type="button" name="snakeGameSnake">newGame</button>
+		<button onclick="changeWalls()" type="button" name="snakeGame">changeWalls</button>
+
+		<!-- below buttons were not implemented yet -->
+		<button onclick="prepareLevel(1)" type="button" name="snakeGameSnake">Level 1</button>
+    <button onclick="exitGame()" type="button" name="snakeGameSnake">Quit</button>
+
+    <p>FPS: <p id='FPS'></p> </p>
+
+    <script src="snake.js"></script>
+
+	</body>
+</html>
