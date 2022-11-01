@@ -504,8 +504,6 @@ function nextFrame() {
   }
 }
 
-//hello
-
 const board = new Board(50,50);
 
 createBorders();
